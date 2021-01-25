@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Libre+Baskerville&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 300px;
+    padding: 20px 0 70px 0;
+    /*used for internet explorer */
+    background: #2d6360 50% 0 url(img/huntington.png) no-repeat;
+
+  background-image:url(img/huntington.png);
+  background-position: 0 0, 0 0, -5px -25px, 0 50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align: center;
+}
+/*css zen garden*/
+h1{
+    padding-top: 0px;
+    padding-bottom: 5px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: normal;
+    border-bottom: none;
+}
+/*image before text*/
+h1::before {
+    display:inline-block;
+    position: relative;
+    top: 60px;
+    content: "";
+    width: 120px;
+    height: 120px;
+    margin: -20px 20px 0 0;
+    background-image: url(img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}
+/*The beauty of css design*/
+h2 {
+    font-family: 'Libre baskerville', sans-serif;  
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6em;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+/*pushes text to the right*/
+h2::before {
+    content: " ";
+    padding: 50px;
+}
+/*first paragraph*/
+.summary{
+    font-family: 'Libre baskerville', sans-serif;
+    font-size: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    color: #325050;
+}
+/*hyperlinks in first para*/
+.intro a, .intro a:visited{
+    font-family: 'Julius Sans One', sans-serif;
+    color: #809B7E;
+    margin: -1px -10px -1px -6px;
+    padding: 1px 10px 1px 10px;
+    text-decoration: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+/*sets highlight when mouse over intro download links*/
+.intro a:hover, .intro a:focus {
+    z-index: 2;
+    color: #fff;
+    background: #3d8a9f;
+    text-decoration: none;
+  }
+/*image before hyperlinks*/
+.intro a::before{
+    display: inline-block;
+    position:relative;
+    top: 0px;
+    left: -5px;
+
+    padding: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    color: #a9b995;
+    background: #d9e1cd;
+    content: "⬇";
+    font-size: 16px;
+    text-indent: 0;
+    font-family:'verdemoderna';
+    line-height: 1;
+}
+/*the underlined CSS*/
+.main abbr, .supporting abbr, .preamble abbr, .summary abbr{
+    color: #325050;
+    font-family: 'Libre baskerville', sans-serif;
+}
+/*sets the look of all h3*/
+h3{
+    margin: 2em 0 0 0;
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+}
+/*merges the backgrounds of participations and benefits*/
+.benefits h3{
+    margin-top: 0;
+}
+/*starts para under ENLIGHTENMENT*/
+    .preamble{
+        font-family: 'Libre baskerville', sans-serif;
+    font-size: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    color: #325050;
+    }
+    /*does the remaining para on page*/
+.main, .supporting{
+    font-family: 'Libre baskerville', sans-serif;
+    font-size: 80%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 2;
+    color: #325050;
+}
+/*Sets para setting for all of para*/
+.main p, .supporting p, .preamble p, .summary p{
+    margin-top: 10px;
+        margin-bottom: 10px;
+        margin-inline-start: 100px;
+    margin-inline-end: 100px;
+}
+/*hyperlinks in main body of text*/
+.participation a{
+    color: #0d8ba1;
+    text-decoration: none;
+}
+/*hyperlinks for requirements*/
+.requirements a{
+    color: #0d8ba1;
+}
+/*set the dave shea and others in bottom banner*/
+[role=contentinfo] a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+/*this will set the rest of the text for role=contentinfo and background*/
+.requirements p[role=contentinfo] {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Libre baskerville', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+
+    background-image: url(img/koi.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    width:auto;
+    padding: 1em 12%;
+    background-size: cover;
+    margin: 0;
+    margin-top: 10px;
+
+}
+/*setting the background for the footer*/
+footer{
+    background: #134347;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+footer a {
+    width: 52px;
+    height: 52px;
+    padding: 52px 0 0 0;
+    margin: 0 2em;
+    display:inline-block; 
+    position: relative;   
+    color: rgba(255, 255, 255, 0.5);
+}
+footer a:hover, footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+  }
+/*setting the images in the footer ::before */
+footer i::before{
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 0;
+    line-height: 1;
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: 36px;
+}
+/*Background for participation and benefits*/
+.participation , .benefits {
+    background-image: url(img/bamboo.png);
+    background-size: cover;
+    background-color: rgba(138, 188, 159, 0.5);
+    background-attachment: fixed;
+}
+.participation{
+    padding: 5px 0;
+    margin-top: 3em;
+}
+.benefits{
+    padding-bottom: 5px;
+    margin-bottom: 3em;
+}
+
+
+
+/*Sidebar starts here*/
+
+
+
+/* setting the sidebar style */
+.sidebar {
+    background: #edf4f0;
+  }
+  .sidebar h3 {
+    display: none;
+  }
+  .sidebar a {
+      color: #607476;
+      text-decoration: none;
+    }
+    .sidebar a:hover, .sidebar a:focus {
+      color: #49968e;
+    }
+  .sidebar ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+    }
+/*creating the look of the lists text*/
+.design-selection ul, .zen-resources ul {
+    margin: 0;
+  }
+  .design-selection li, .zen-resources li {
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+  }
+/* the design and designer style */
+.design-selection h3 {
+    display: none;
+  }
+  .design-selection .designer-name {
+    color: #616857;
+    font-size: 0.9em;
+    font-style: normal;
+    margin-top: 0;
+  }
+  /* nav bar for view all designs */
+.design-archives {
+    position: absolute;
+    top: 235px;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    font-size: 150%;
+    padding-top: px;
+  }
+/*removes h3 as not needed*/
+  .design-archives h3 {
+    display: none;
+  }
+  /*sets margin for the nav bar*/
+  .design-archives ul {
+    margin: 0;
+  }
+/*setting the design archives lists*/
+  .design-archives li {
+      position: absolute;
+      top: 0;padding: 0;
+      margin: 0;
+      border: none;
+      }
+
+  .design-archives li.viewall {
+      width: 100%;
+      padding: 0 71px;
+      line-height: 50px;
+    }
+/*setting the arrow to go to next design*/
+  .next {
+    left: 0;
+    z-index: 3;
+  
+    left: auto;
+    right: 0;
+  }
+  /*sets colour for view all designs*/
+  .design-archives a, .design-archives a:visited {
+      color: rgba(255, 255, 255, 0.65);
+    }
+/*sets the hover over for view all designs and >*/
+  .design-archives a:hover, .design-archives a:focus {
+    color: #fff;
+  }
+/*sets the text for the arrow in the nav bar*/
+  .design-archives .next a {
+    display: block;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    text-indent: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  /*pushes text infront of background*/
+  .design-archives .viewall a {
+      z-index: 2;
+      width: 100%;
+      min-height: 70px;
+      padding: 12px 0 0 0;
+    }
+    /*sets the arrow in the nav bar*/
+  .design-archives a::before {
+      position: absolute;
+      left: 0;
+      width: 70px;
+      text-align: center;
+      text-indent: 0;
+      font-size: 44px;
+      font-family: 'verdemoderna';
+      line-height: 70px;
+  }
+  /*gives the symbol for the arrow*/
+  .design-archives .next a::before {
+    content: ">";
+  }
+/*sets the zen-resource background image and lists*/
+  .zen-resources {
+    overflow: hidden;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(img/bamboo.png);
+  }
+  .zen-resources li {
+    border-top: solid 1px #a0b9ad;
+    font-style: normal;
+  }
+  .zen-resources li:last-child {
+    float: none;
+    width: auto;
+    border-bottom: solid 1px #a0b9ad;
+  }
+  /*this will but the by and designer-name underneath the design*/
+  .design-selection .design-name,li.viewall a {
+    display: block;
+  }
+
+  
+
